@@ -136,7 +136,7 @@
                 <div class="icon-box">
                   <i class="bi bi-send-check"></i>
                   <h3>Comunicación</h3>
-                  <p>constante entre nuestros clientes y proveedores.</p>
+                  <p>Constante entre nuestros clientes y proveedores.</p>
                 </div>
               </div> <!-- End Icon Box -->
 
@@ -151,7 +151,7 @@
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-clipboard2-check"></i>
-                  <h3>logística</h3>
+                  <h3>Logística</h3>
                   <p>Contamos con una logística cuidadosamente planificada por nuestro equipo.</p>
                 </div>
               </div> <!-- End Icon Box -->
@@ -181,7 +181,7 @@
             <div class="stats-item">
               <span>Restaurantes</span>
 
-              <p>Ofrecemos una variedad de restaurantes y opciones de comida para todos los gustos.</p>
+              <p>Ofrecemos una variedad de restaurantes y opciones de comida para todos los paladares</p>
             </div>
           </div><!-- End Stats Item -->
           
@@ -249,10 +249,10 @@
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
             <h3> ¿Por que viajar con Routes?</h3>
             <p class="fst-italic">
-              Somos una opción para todo tipo de público, ya que ofrecemos precios adaptados a todos nuestros clientes..
+              Somos la mejor opción para ti.
             </p>
             <p>
-               Además, ofrecemos la optimización de tu tiempo, un viaje seguro y flexible, adaptado a tus necesidades y preferencias.
+               Otimizamos tu tiempo, obtnedras un viaje seguro y flexible, adaptado a tus necesidades y preferencias.
             </p>
           </div>
         </div><!-- Features Item -->
@@ -350,6 +350,107 @@
 
     <!-- Testimonials Section -->
 
+
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Precios</h2>
+        <div><span>Costos</span> <span class="description-title"></span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Plan Aventurero</h3>
+              <p class="description">Te conectamos con nuestros colaboradores para ofrecerte precios razonables y adaptados a tus necesidades.</p>
+              <a href="#" class="cta-btn">Comienza tu aventura</a>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <p class="popular">Popular</p>
+              <h3>Plan Rutero</h3>
+              <p class="description">Obtén un paquete personalizado, con la flexibilidad de añadir nuevos destinos o eliminar aquellos que ya conoces.</p>
+
+              <table>
+                <p class="text-center small">
+                <thead>
+                    <tr>
+                        <th>Ruta </th>
+                        <th>Machu Picchu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="tarea1" value="40" onclick="calcularTotal()"></td>
+                        <td>Ollantaytambo</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="tarea2" value="30" onclick="calcularTotal()"></td>
+                        <td>Pisac</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="tarea3" value="30" onclick="calcularTotal()"></td>
+                        <td>Maras</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" name="tarea4" value="10" onclick="calcularTotal()"></td>
+                      <td>City tour</td>
+                  </tr>
+                </tbody>
+            </table>
+            
+              <h4><sup>$</sup> <sup id="precioTotal">239</sup> </h4> 
+            
+          </p>
+            <script>
+                function calcularTotal() {
+                    let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                    let total = 239;  // Monto básico inicial
+                    checkboxes.forEach((checkbox) => {
+                        if (checkbox.checked) {
+                            total += parseFloat(checkbox.value);
+                        }
+                    });
+                    document.getElementById('precioTotal').innerText = total.toFixed(2);
+                }
+            </script>
+
+
+              
+              
+              <a href="#" class="cta-btn">Comienza tu Aventura</a>
+              
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Plan Explorador</h3>
+              <p class="description">Puedes explorar el destino soñado en el momento que más te convenga.</p>
+              
+              <a href="#" class="cta-btn">Comienza tu aventura.</a>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
     <!-- Team Section -->
     <section id="team" class="team section">
 
@@ -414,107 +515,6 @@
         </div>
 
       </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Precios</h2>
-        <div><span>Costos</span> <span class="description-title"></span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Plan Aventurero</h3>
-              <p class="description">Te conectamos con nuestros colaboradores para ofrecerte precios razonables y adaptados a tus necesidades.</p>
-              <a href="#" class="cta-btn">Comienza tu aventura</a>
-              
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <p class="popular">Popular</p>
-              <h3>Plan Rutero</h3>
-              <p class="description">Obtén un paquete personalizado, con la flexibilidad de añadir nuevos destinos o eliminar aquellos que ya conoces.</p>
-
-              <table>
-                <p class="text-center small">
-                <thead>
-                    <tr>
-                        <th>Ruta </th>
-                        <th>Machu Picchu</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" name="tarea1" value="40" onclick="calcularTotal()"></td>
-                        <td>Ollantaytambo</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="tarea2" value="30" onclick="calcularTotal()"></td>
-                        <td>Pisac</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="tarea3" value="30" onclick="calcularTotal()"></td>
-                        <td>Maras</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" name="tarea4" value="10" onclick="calcularTotal()"></td>
-                      <td>Cyty tour</td>
-                  </tr>
-                </tbody>
-            </table>
-            
-              <h4><sup>$</sup> <sup id="precioTotal">239</sup> </h4> 
-            
-          </p>
-            <script>
-                function calcularTotal() {
-                    let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                    let total = 239;  // Monto básico inicial
-                    checkboxes.forEach((checkbox) => {
-                        if (checkbox.checked) {
-                            total += parseFloat(checkbox.value);
-                        }
-                    });
-                    document.getElementById('precioTotal').innerText = total.toFixed(2);
-                }
-            </script>
-
-
-              
-              
-              <a href="#" class="cta-btn">Comienza tu Aventura</a>
-              
-              
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Plan Explorador</h3>
-              <p class="description">Puedes explorar el destino que elijas, en el momento que más te convenga.</p>
-              
-              <a href="#" class="cta-btn">Comienza tu aventura.</a>
-              
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-
 
     </section><!-- /Faq Section -->
 
@@ -632,7 +632,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>servicios</h4>
+          <h4>Servicios</h4>
           <ul>
             <li><a href="#">Transporte</a></li>
             <li><a href="#">Hoteles</a></li>
